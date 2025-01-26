@@ -1,0 +1,203 @@
+\<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #34495e;
+            background-color: #ecf0f1;
+        }
+        header {
+            background: #1abc9c;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        header h1 {
+            font-size: 2.8rem;
+            font-weight: 600;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+            opacity: 0.9;
+        }
+        nav {
+            margin-top: 1rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+            font-size: 1rem;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 3rem 20px;
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .intro {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+        }
+        .intro h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #16a085;
+        }
+        .columns {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 2rem;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .column {
+            background: white;
+            border: 1px solid #bdc3c7;
+            padding: 20px;
+            width: 30%;
+            min-width: 250px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .column:hover {
+            transform: scale(1.05);
+        }
+        .column h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+            color: #1abc9c;
+        }
+        footer {
+            background-color: #34495e;
+            color: white;
+            padding: 1.5rem 0;
+            text-align: center;
+        }
+        footer p {
+            margin: 0.5rem 0;
+            font-size: 0.9rem;
+        }
+        footer a {
+            color: #1abc9c;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .shades {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+        .shades h2 {
+            color: #16a085;
+            margin-bottom: 1rem;
+        }
+        .shade-box {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 1rem;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .shade {
+            width: 100px;
+            height: 100px;
+            border-radius: 5px;
+            text-align: center;
+            line-height: 100px;
+            color: white;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+        .shade-1 { background-color: #1abc9c; }
+        .shade-2 { background-color: #16a085; }
+        .shade-3 { background-color: #34495e; }
+        .shade-4 { background-color: #bdc3c7; color: black; }
+        .shade-5 { background-color: #ecf0f1; color: black; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Landing Page</h1>
+        <p>Explore, Discover, and Interact</p>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#features">Features</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about" class="intro">
+        <h2>About Me</h2>
+        <p>I am dedicated to providing exceptional web design and development services. 
+           The goal is to bring your ideas to life with creative and user-friendly designs.</p>
+    </section>
+
+    <section id="features">
+        <h2>Features</h2>
+        <div class="columns">
+            <div class="column">
+                <h3>Responsive Design</h3>
+                <p>This design is mobile-friendly and adaptable
+                   to any screen size.</p>
+            </div>
+            <div class="column">
+                <h3>Fast Performance</h3>
+                <p>Optimized for speed to ensure smooth
+                   user experience.</p>
+            </div>
+            <div class="column">
+                <h3>Creative Solution</h3>
+                <p>Unique designs tailored to your specific needs.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="shades">
+        <h2>Shades Used in this website</h2>
+        <div class="shade-box">
+            <div class="shade shade-1">#1abc9c</div>
+            <div class="shade shade-2">#16a085</div>
+            <div class="shade shade-3">#34495e</div>
+            <div class="shade shade-4">#bdc3c7</div>
+            <div class="shade shade-5">#ecf0f1</div>
+        </div>
+        <p style="margin-top: 1rem;">This project taught me how to:
+            <ul style="text-align: left; margin: 1rem auto; display: inline-block;">
+                <li>Use color palettes for a balanced design.</li>
+                <li>Implement responsive layouts using flexbox.</li>
+                <li>Add hover effects and transitions for interactivity.</li>
+                <li>Create visually distinct sections with padding, margins, and box shadows.</li>
+            </ul>
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 My Landing Page. All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+</body>
+</html>
